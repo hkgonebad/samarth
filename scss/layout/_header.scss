@@ -1,0 +1,49 @@
+header {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    @include box-shadow(0px 4px 21px 0px #00000024);
+
+    @include transition(all 250ms cubic-bezier(0.7, 0.2, 0.4, 0.60));
+
+    @include media-breakpoint-down(md) {
+        // height: 70px;
+    }
+
+
+}
+
+.navbar {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+
+    @include media-breakpoint-down(md) {}
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        @include media-breakpoint-down(md) {
+            margin: 0;
+        }
+    }
+
+}
+
+.sticky {
+
+    .topHeader {}
+}

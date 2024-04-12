@@ -1,0 +1,70 @@
+footer {
+    background-image: url('../img/bg/footer-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #3E3F50;
+}
+
+.topFooter {
+    padding: 50px 0 20px;
+    color: #fff;
+
+    .tfLogo {
+        img {}
+    }
+
+    .tfLinks {
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            li {
+
+                a {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 400;
+                    transition: all 0.3s ease-in-out;
+
+                    svg {
+                        height: 24px;
+                        width: 24px;
+                    }
+
+                    &:hover {
+                        color: $danger;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.copyRight {
+    padding: 10px 0 15px;
+    color: #fff;
+    text-align: center;
+
+    p {
+        margin-bottom: 0;
+        padding-top: 15px;
+        border-top: 1px solid #535465;
+
+        font-size: 15px;
+        font-weight: 400;
+        opacity: .5;
+
+    }
+}

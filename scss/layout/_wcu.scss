@@ -1,0 +1,113 @@
+.whyChooseUs {
+    background-image: url('../img/bg/wcu-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wcuBox {
+    position: relative;
+
+    .wcuImg {
+        height: 594px;
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: 0;
+            height: 7px;
+            width: 426px;
+            background: #050405;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .wcuItems {
+
+
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 70%;
+            transform: translateY(-60%);
+        }
+    }
+
+    .wcuItem {
+
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        .card {
+
+            .card-body {
+
+                .card-img {
+
+                    img {}
+                }
+
+                h3 {}
+
+                .fa,
+                svg,
+                .icon {
+                    border: 1px solid #A3C0ED;
+                    border-radius: 50%;
+                    height: 36px;
+                    width: 36px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1rem;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            &:hover {
+
+                .fa,
+                svg,
+                .icon {
+                    background: #A3C0ED;
+                    color: #fff;
+
+                }
+            }
+        }
+    }
+
+
+}
+
+.brands {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #DDE4EE;
+
+    .item {
+
+        img {
+            margin: 0 10px;
+        }
+    }
+}
