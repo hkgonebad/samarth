@@ -76,9 +76,9 @@ $(function () {
       arrows: true,
       lazyLoad: "ondemand",
       prevArrow:
-        "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        "<button type='button' class='slick-prev pull-left'><i class='fa fa-arrow-left' aria-hidden='true'></i></button>",
       nextArrow:
-        "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        "<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></button>",
 
       responsive: [
         {
@@ -96,11 +96,15 @@ $(function () {
     $(".testimonialsSlider").slick({
       slidesToShow: 3,
       slidesToScroll: 1,
-      dots: true,
+      dots: false,
       autoplay: true,
       autoplayDuration: 2000,
       arrows: true,
       lazyLoad: "ondemand",
+      prevArrow:
+        "<button type='button' class='slick-prev pull-left'><i class='fa fa-arrow-left' aria-hidden='true'></i></button>",
+      nextArrow:
+        "<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></button>",
 
       responsive: [
         {
@@ -115,4 +119,20 @@ $(function () {
 
   // Feather Icons
   feather.replace();
+
+  // Capture Face
+
+  // Toggle Sample Image and Placeholder
+  $(".toggleSample").on("click", function () {
+    var $cfPlaceholder = $(".cfPlaceholder");
+    var $cfSample = $(".cfSample");
+
+    // Toggle visibility of placeholder and sample images
+    $cfPlaceholder.toggleClass("d-none");
+    $cfSample.toggleClass("d-none");
+
+    // Toggle text of the link
+    var newText = $cfSample.hasClass("d-none") ? "View sample photo" : "Hide sample photo";
+    $(this).text(newText);
+  });
 });

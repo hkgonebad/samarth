@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samarth</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <i data-feather="menu"></i>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarMain" aria-labelledby="navbarMainLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="navbarMainLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#about">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#certifications">Certifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex gap-2 btns ms-4">
+                            <a class="btn btn-primary">Register Now</a>
+                            <a class="btn btn-dark">Download App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Page Header -->
+        <section class="block pageHeader">
+            <div class="container">
+                <div class="pageHeaderContent">
+                    <h2>Follow the simple steps and start your journey</h2>
+                    <img src="img/slider/steps.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Register Form -->
+        <section class="block registerForm">
+            <div class="container">
+                <div class="registerFormContent">
+                    <div class="secTitle">
+                        <p>Kindly provide your information to complete the registration process.</p>
+                    </div>
+                </div>
+                <form action="" class="regForm">
+
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="mobile">Mobile Number</label>
+                                        <input type="text" class="form-control" id="mobile" placeholder="Enter your mobile number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email ID</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email ID">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group dob">
+                                        <label for="dob">Date of Birth</label>
+                                        <input type="text" class="form-control" id="dob" placeholder="DD/MM/YYYY">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="gender">Gender</label>
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="male" value="male" name="gender">
+                                                <label class="form-check-label" for="male">Male</label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <input class="form-check-input" type="radio" id="female" value="female" name="gender">
+                                                <label class="form-check-label" for="female">Female</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group form-captureFace" data-bs-toggle="modal" data-bs-target="#captureFace">
+                                <i data-feather="camera"></i>
+                                <label for="face">Capture Face</label>
+                                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#captureFace">Capture</button> -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="education">Education</label>
+                                <select class="form-select" id="education">
+                                    <option selected>Select your education</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="experience">Experience</label>
+                                <select class="form-select" id="experience">
+                                    <option selected>Fresher</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="industry">Industry</label>
+                                <select class="form-select" id="industry">
+                                    <option selected>Select the industry you have worked on</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="address">Current Address</label>
+                                <textarea class="form-control" id="address" rows="1"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="pin">Pin Code</label>
+                                <input type="text" class="form-control" id="pin" placeholder="Enter your pin code">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="pwd">Are you a Person with Disabilities</label>
+                                <div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="yes" value="yes" name="pwd">
+                                        <label class="form-check-label" for="yes">Yes</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="radio" id="no" value="no" name="pwd">
+                                        <label class="form-check-label" for="no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="btns">
+                        <button type="submit" class="btn btn-primary">Register Now</button>
+                        <p>Or log in with:</p>
+                        <button type="button" class="btn btn-outline-primary"><i class="fab fa-google"></i> Google</button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="fa fa-lock"></i> DigiLocker</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+
+        <!-- Download App -->
+        <section class="block downloadApp pb-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="downloadAppContent">
+                            <div class="secTitle ">
+                                <h2>Download the App</h2>
+                            </div>
+                            <p>Get certified courses, learn new skills and become job ready all in one place!</p>
+                            <small>Download App</small>
+                            <div class="btns">
+                                <a class="btn p-0"><img src="img/slider/google-play.svg" alt=""></a>
+                                <a class="btn p-0"><img src="img/slider/apple-store.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 align-self-end">
+                        <div class="downloadAppImg">
+                            <img src="img/iphone-mockup.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="topFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="tfLogo">
+                            <img src="img/logo-light.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tfLinks">
+                            <h4>Our Links</h4>
+                            <ul class="unstyled">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Certifications</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tfSocial tfLinks">
+                            <h4>Follow Us</h4>
+                            <ul class="unstyled">
+                                <li><a href="#"><i data-feather="youtube"></i></a></li>
+                                <li><a href="#"><i data-feather="facebook"></i></a></li>
+                                <li><a href="#"><i data-feather="twitter"></i></a></li>
+                                <li><a href="#"><i data-feather="instagram"></i></a></li>
+                                <li><a href="#"><i data-feather="linkedin"></i></a></li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyRight">
+            <div class="container">
+                <p>RetailSamarth@2024. All rights reserved</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Capture Face Modal -->
+    <div class="modal fade captureFaceModal" id="captureFace" tabindex="-1" aria-labelledby="captureFaceLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="captureFaceLabel">Capture your Face</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="captureArea">
+                        <img src="img/user.png" alt="" class="cfPlaceholder">
+                        <img src="img/sample.png" alt="" class="cfSample d-none">
+                    </div>
+                    <div class="captureGuide">
+                        <img src="img/capture-face-guide.png" alt="">
+                        <a href="#!" class="btn btn-link text-danger toggleSample">View sample photo</a>
+                        <br>
+                        <button class="btn btn-primary"><i class="fa fa-camera"></i> Capture Face</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/plugins.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

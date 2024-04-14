@@ -33,6 +33,11 @@
         }
     }
 
+    p {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
     &.text-center {
         justify-content: center;
 
@@ -41,6 +46,35 @@
                 right: 0;
                 margin: 0 auto;
             }
+        }
+    }
+}
+
+.pageHeader {
+    background-image: url('../img/bg/slider-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .pageHeaderContent {
+        padding-bottom: 30px;
+        text-align: center;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #06052E;
+            margin-bottom: 30px;
+            line-height: 1;
+            text-transform: capitalize;
+
+            @include media-breakpoint-down(md) {
+                font-size: 24px;
+            }
+        }
+
+        img {
+            max-width: 100%;
         }
     }
 }

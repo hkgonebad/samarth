@@ -71,5 +71,23 @@
                 }
             }
         }
+
+        .slick-prev,
+        .slick-next {
+            top: initial;
+            bottom: -60px;
+            right: 0;
+            left: 0;
+        }
+
+        .slick-next {
+            transform: translateX(-50%);
+            left: calc(50% + 30px)
+        }
+
+        .slick-prev {
+            transform: translateX(-50%);
+            left: calc(50% - 30px)
+        }
     }
 }

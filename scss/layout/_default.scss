@@ -116,13 +116,6 @@ main {
 
 .slick-dots {
 	position: absolute;
-	// bottom: 20px;
-	// top: 50%;
-	// @include transform(translateY(-50%));
-	// bottom: initial;
-	// right: -10px;
-	// display: inline-block;
-	// width: auto;
 	z-index: 9;
 
 	li {
@@ -158,6 +151,36 @@ main {
 		}
 	}
 }
+
+.slick-prev,
+.slick-next {
+	background: $primary;
+	border: 1px solid $primary;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+
+	z-index: 1;
+	color: #fff;
+	font-size: 1.2rem;
+	transition: all 0.3s ease;
+	cursor: pointer;
+
+
+	&:before {
+		display: none;
+	}
+
+	&:hover {
+		background: #fff;
+		color: $primary;
+	}
+}
+
 
 .nav-tabs {
 

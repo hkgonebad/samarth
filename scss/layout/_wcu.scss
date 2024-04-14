@@ -70,6 +70,7 @@
                 .fa,
                 svg,
                 .icon {
+                    flex-shrink: 0;
                     border: 1px solid #A3C0ED;
                     border-radius: 50%;
                     height: 36px;
@@ -99,10 +100,21 @@
 }
 
 .brands {
-    padding: 2rem;
+    padding: 3rem;
     background: #fff;
     border-radius: 20px;
     border: 1px solid #DDE4EE;
+
+    @include media-breakpoint-down(md) {
+        padding: 2rem;
+    }
+
+    .slick-prev,
+    .slick-next {
+
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
     .item {
 
