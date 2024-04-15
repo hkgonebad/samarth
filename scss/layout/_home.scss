@@ -9,6 +9,13 @@
 
 .homeSlider {
 
+    .slide {
+        .row {
+            @include media-breakpoint-down(md) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
 
     .slick-dots {
         bottom: 20px;
@@ -20,6 +27,11 @@
 
     .sliderContent {
         padding-bottom: 5rem;
+
+        @include media-breakpoint-down(md) {
+            padding-bottom: 4rem;
+            padding-top: 4rem;
+        }
 
         h1 {
             font-size: 50px;

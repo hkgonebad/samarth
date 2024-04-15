@@ -37166,7 +37166,14 @@ footer {
   padding: 60px 0 0 !important;
 }
 
-/* line 13, ../laragon/www/samarth/scss/layout/_home.scss */
+@media (max-width: 767.98px) {
+  /* line 13, ../laragon/www/samarth/scss/layout/_home.scss */
+  .homeSlider .slide .row {
+    flex-direction: column-reverse;
+  }
+}
+
+/* line 20, ../laragon/www/samarth/scss/layout/_home.scss */
 .homeSlider .slick-dots {
   bottom: 20px;
   right: initial;
@@ -37175,12 +37182,20 @@ footer {
   width: auto;
 }
 
-/* line 21, ../laragon/www/samarth/scss/layout/_home.scss */
+/* line 28, ../laragon/www/samarth/scss/layout/_home.scss */
 .homeSlider .sliderContent {
   padding-bottom: 5rem;
 }
 
-/* line 24, ../laragon/www/samarth/scss/layout/_home.scss */
+@media (max-width: 767.98px) {
+  /* line 28, ../laragon/www/samarth/scss/layout/_home.scss */
+  .homeSlider .sliderContent {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
+}
+
+/* line 36, ../laragon/www/samarth/scss/layout/_home.scss */
 .homeSlider .sliderContent h1, .homeSlider .sliderContent .h1 {
   font-size: 50px;
   font-weight: 700;
@@ -37191,13 +37206,13 @@ footer {
 }
 
 @media (max-width: 767.98px) {
-  /* line 24, ../laragon/www/samarth/scss/layout/_home.scss */
+  /* line 36, ../laragon/www/samarth/scss/layout/_home.scss */
   .homeSlider .sliderContent h1, .homeSlider .sliderContent .h1 {
     font-size: 34px;
   }
 }
 
-/* line 36, ../laragon/www/samarth/scss/layout/_home.scss */
+/* line 48, ../laragon/www/samarth/scss/layout/_home.scss */
 .homeSlider .sliderContent h1 span, .homeSlider .sliderContent .h1 span {
   color: #E32729;
   font-size: 61px;
@@ -37206,32 +37221,32 @@ footer {
 }
 
 @media (max-width: 767.98px) {
-  /* line 36, ../laragon/www/samarth/scss/layout/_home.scss */
+  /* line 48, ../laragon/www/samarth/scss/layout/_home.scss */
   .homeSlider .sliderContent h1 span, .homeSlider .sliderContent .h1 span {
     font-size: 36px;
   }
 }
 
-/* line 48, ../laragon/www/samarth/scss/layout/_home.scss */
+/* line 60, ../laragon/www/samarth/scss/layout/_home.scss */
 .homeSlider .sliderContent small, .homeSlider .sliderContent .small {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 54, ../laragon/www/samarth/scss/layout/_home.scss */
+/* line 66, ../laragon/www/samarth/scss/layout/_home.scss */
 .homeSlider .sliderContent .btns {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-/* line 59, ../laragon/www/samarth/scss/layout/_home.scss */
+/* line 71, ../laragon/www/samarth/scss/layout/_home.scss */
 .homeSlider .sliderContent .btns .btn {
   padding: 0;
 }
 
-/* line 66, ../laragon/www/samarth/scss/layout/_home.scss */
+/* line 78, ../laragon/www/samarth/scss/layout/_home.scss */
 .homeSlider .sliderImg {
   align-self: flex-end;
   display: flex;
@@ -37239,7 +37254,7 @@ footer {
   justify-content: center;
 }
 
-/* line 73, ../laragon/www/samarth/scss/layout/_home.scss */
+/* line 85, ../laragon/www/samarth/scss/layout/_home.scss */
 .homeSlider .sliderImg img {
   width: auto;
 }

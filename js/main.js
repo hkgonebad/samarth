@@ -120,6 +120,28 @@ $(function () {
   // Feather Icons
   feather.replace();
 
+  // Certifications Accordion
+  $("#cAccordion .card").each(function () {
+    var $icon = $(this).find(".icon");
+    var $collapse = $(this).find(".card-body");
+
+    // Check if the accordion item is initially collapsed
+    if (!$collapse.hasClass("show")) {
+      $icon.addClass("fa-plus").removeClass("fa-minus");
+    }
+
+    // Listen for Bootstrap collapse events
+    $collapse
+      .on("hidden.bs.collapse", function () {
+        $icon.removeClass("fa-minus").addClass("fa-plus");
+        console.log("hidden 1");
+      })
+      .on("shown.bs.collapse", function () {
+        $icon.removeClass("fa-plus").addClass("fa-minus");
+        console.log("shown 1");
+      });
+  });
+
   // Capture Face
 
   // Toggle Sample Image and Placeholder
