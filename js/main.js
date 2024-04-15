@@ -120,28 +120,6 @@ $(function () {
   // Feather Icons
   feather.replace();
 
-  // Certifications Accordion
-  $("#cAccordion .card").each(function () {
-    var $icon = $(this).find(".icon");
-    var $collapse = $(this).find(".card-body");
-
-    // Check if the accordion item is initially collapsed
-    if (!$collapse.hasClass("show")) {
-      $icon.addClass("fa-plus").removeClass("fa-minus");
-    }
-
-    // Listen for Bootstrap collapse events
-    $collapse
-      .on("hidden.bs.collapse", function () {
-        $icon.removeClass("fa-minus").addClass("fa-plus");
-        console.log("hidden 1");
-      })
-      .on("shown.bs.collapse", function () {
-        $icon.removeClass("fa-plus").addClass("fa-minus");
-        console.log("shown 1");
-      });
-  });
-
   // Capture Face
 
   // Toggle Sample Image and Placeholder
@@ -158,3 +136,35 @@ $(function () {
     $(this).text(newText);
   });
 });
+
+// Certifications Accordion
+// document.addEventListener("DOMContentLoaded", function () {
+//   console.log("DOMContentLoaded");
+//   const accordionItems = document.querySelectorAll("#cAccordion .card");
+
+//   accordionItems.forEach((item) => {
+//     const icon = item.querySelector(".icon");
+//     const collapse = item.querySelector(".card-body");
+
+//     console.log("item", item);
+
+//     // Check if the accordion item is initially collapsed
+//     if (!collapse.classList.contains("collapsed")) {
+//       icon.classList.remove("fa-minus");
+//       icon.classList.add("fa-plus");
+//     }
+
+//     // Listen for Bootstrap collapse events
+//     collapse.addEventListener("hidden.bs.collapse", () => {
+//       icon.classList.remove("fa-minus");
+//       icon.classList.add("fa-plus");
+//       console.log("hidden");
+//     });
+
+//     collapse.addEventListener("shown.bs.collapse", () => {
+//       icon.classList.remove("fa-plus");
+//       icon.classList.add("fa-minus");
+//       console.log("shown");
+//     });
+//   });
+// });
