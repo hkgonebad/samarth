@@ -70,6 +70,7 @@
                 .fa,
                 svg,
                 .icon {
+                    color:#A3C0ED;
                     flex-shrink: 0;
                     border: 1px solid #A3C0ED;
                     border-radius: 50%;
@@ -85,12 +86,21 @@
 
             &:hover {
 
+                .card-img{
+                                 transition: all 0.4s ease;
+
+                    transform: scale(1.1);
+                }
+                border: solid 3px #A3C0ED; 
                 .fa,
                 svg,
                 .icon {
                     background: #A3C0ED;
-                    color: #fff;
+                    color: #000000;
 
+                }
+                h3{
+                    color: #000000;
                 }
             }
         }
@@ -123,3 +133,4 @@
         }
     }
 }
+

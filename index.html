@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samarth</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <!-- Header -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -117,18 +123,20 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <div class="aboutImg">
+                        <div  data-aos="fade-right"  data-aos-easing="ease-in-out" class="aboutImg">
                             <img src="img/about.png" alt="">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="aboutContent">
-                            <div class="secTitle">
+                            <div data-aos="fade-down"   data-aos-easing="ease-in-out" class="secTitle">
                                 <h2>About Us</h2>
                             </div>
+                            <div data-aos="fade-left"   data-aos-easing="ease-in-out" class="aboutContent-animation">
                             <p>Samarth, by Reliance Retail, will skill you and make you job-ready. The platform will help you to qualify for Retail Jobs across India.</p>
                             <p><b>How can we help?</b>We offer a fun and easy way to learn essential skills for starting a career in retail. *If you have completed Class 8th or above, this platform is for you!*</p>
                             <p><b>Here's what you'll gain:</b>These courses will boost your confidence and help you find jobs in the Retail Industry.</p>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -138,26 +146,27 @@
         <!-- Why Choose Us -->
         <section class="block whyChooseUs">
             <div class="container">
-                <div class="secTitle text-center">
+                <div data-aos="fade-down"  data-aos-easing="ease-in-out" class="secTitle text-center">
                     <h2>Why Choose Retail Samarth?</h2>
                 </div>
 
                 <div class="wcuBox">
-                    <div class="wcuImg"><img src="img/wcu.png" alt=""></div>
+                    <div data-aos="fade-up"  data-aos-easing="ease-in-out" class="wcuImg"><img src="img/wcu.png" alt=""></div>
 
 
                     <div class="row wcuItems justify-content-center">
-                        <div class="col-md-5 col-lg-4">
+                        <div data-aos="fade-right" class="col-md-5 col-lg-4">
                             <div class="wcuItem wcuItem1">
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="card-img">
+                                        <div class="card-img hover-transition">
                                             <img src="img/icons/learn.svg" alt="">
                                         </div>
 
                                         <h3>Learn at your own place, anytime, anywhere!</h3>
-
+                                        <div>
                                         <i class="fa fa-arrow-right"></i>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -165,25 +174,31 @@
                             <div class="wcuItem  wcuItem2">
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="card-img">
+                                        <div style="background-color: #FEE8DF;
+                                        " class="card-img hover-transition">
                                             <img src="img/icons/understand.svg" alt="">
                                         </div>
                                         <h3>Easy to Understand</h3>
+                                        <div>
                                         <i class="fa fa-arrow-right"></i>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-5 col-lg-4">
+                        <div data-aos="fade-left" class="col-md-5 col-lg-4">
                             <div class="wcuItem  wcuItem3 mt-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="card-img">
+                                        <div style="background-color: #DCF9FF;
+                                        " class="card-img hover-transition">
                                             <img src="img/icons/rupee.svg" alt="">
                                         </div>
                                         <h3>Free of Cost</h3>
+                                        <div>
                                         <i class="fa fa-arrow-right"></i>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +206,8 @@
                             <div class="wcuItem  wcuItem4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="card-img">
+                                        <div style="background-color: #ECE5FD;
+                                " class="card-img hover-transition">
                                             <img src="img/icons/job.svg" alt="">
                                         </div>
                                         <h3>Makes You Job Ready</h3>
@@ -234,11 +250,11 @@
                 <div class="row align-items-center">
                     <div class="col-md-7">
                         <div class="certificationsContent">
-                            <div class="secTitle">
+                            <div data-aos="fade-down"  data-aos-easing="ease-in-out"  class="secTitle">
                                 <h2>Certifications</h2>
                             </div>
 
-                            <div class="accordion" id="cAccordion">
+                            <div data-aos="fade-right"  data-aos-easing="ease-in-out"  class="accordion" id="cAccordion">
                                 <div class="accordion-item card">
                                     <div class="card-body accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         <div class="card-img">
@@ -292,7 +308,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-5">
+                    <div data-aos="fade-left"  data-aos-easing="ease-in-out"  class="col-md-5">
 
                         <div class="certificationsImg">
                             <img src="img/certifications.png" alt="">
@@ -308,13 +324,13 @@
         <section class="block testimonials">
             <i class="testiIcon"><img src="img/icons/testi-icon.svg" alt=""></i>
             <div class="container">
-                <div class="secTitle text-center">
+                <div data-aos="fade-down"  data-aos-easing="ease-in-out"  class="secTitle text-center">
                     <h2>What our Candidates say</h2>
                 </div>
 
                 <div class="testimonialsSlider">
                     <div class="item">
-                        <div class="tsBox">
+                        <div data-aos="fade-right" data-aos-once="true" data-aos-offset="200"   data-aos-easing="ease-in-out"  class="tsBox">
                             <div class="tsImg">
                                 <img src="img/testimonials/1.png" alt="">
                                 <!-- Video Testimonial -->
@@ -329,7 +345,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="tsBox">
+                        <div data-aos="fade-down"   data-aos-once="true"     data-aos-offset="200"   class="tsBox">
                             <div class="tsImg">
                                 <img src="img/testimonials/1.png" alt="">
                                 <!-- Video Testimonial -->
@@ -344,7 +360,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="tsBox">
+                        <div data-aos="fade-left"  data-aos-once="true" data-aos-offset="200"   data-aos-easing="ease-in-out"  class="tsBox">
                             <div class="tsImg">
                                 <img src="img/testimonials/1.png" alt="">
                                 <!-- Video Testimonial -->
@@ -384,7 +400,7 @@
                         <h2>Frequently Asked Questions</h2>
                     </div>
 
-                    <div class="accordion" id="faqAccordion">
+                    <div data-aos="fade-left"  data-aos-easing="ease-in-out"  class="accordion" id="faqAccordion">
                         <div class="accordion-item ">
                             <h2 class="accordion-header accordion-button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
                                 Can the courses be accessed through Laptop / Desktop ?
@@ -426,9 +442,10 @@
                 <div class="row align-items-center">
                     <div class="col-md-8">
                         <div class="downloadAppContent">
-                            <div class="secTitle ">
+                            <div data-aos="fade-down"  data-aos-easing="ease-in-out"   class="secTitle ">
                                 <h2>Download the App</h2>
                             </div>
+                            <div data-aos="fade-right"  data-aos-easing="ease-in-out" class="downloadAppContent-animation">
                             <p>Get certified courses, learn new skills and become job ready all in one place!</p>
                             <small>Download App</small>
                             <div class="btns">
@@ -436,9 +453,10 @@
                                 <a class="btn p-0"><img src="img/slider/apple-store.svg" alt=""></a>
                             </div>
                         </div>
+                        </div>
                     </div>
                     <div class="col-md-4 align-self-end">
-                        <div class="downloadAppImg">
+                        <div data-aos="fade-left"  data-aos-easing="ease-in-out" class="downloadAppImg">
                             <img src="img/iphone-mockup.png" alt="">
                         </div>
                     </div>
@@ -454,12 +472,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="tfLogo">
+                        <div data-aos="fade-right"  data-aos-easing="ease-in-out" class="tfLogo">
                             <img src="img/logo-light.png" alt="">
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="tfLinks">
+                        <div data-aos="fade-down" data-aos-easing="ease-in-out" class="tfLinks">
                             <h4>Our Links</h4>
                             <ul class="unstyled">
                                 <li><a href="#">About Us</a></li>
@@ -469,7 +487,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="tfSocial tfLinks">
+                        <div data-aos="fade-left"  data-aos-easing="ease-in-out" class="tfSocial tfLinks">
                             <h4>Follow Us</h4>
                             <ul class="unstyled">
                                 <li><a href="#"><i data-feather="youtube"></i></a></li>
@@ -485,7 +503,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyRight">
+        <div  class="copyRight">
             <div class="container">
                 <p>RetailSamarth@2024. All rights reserved</p>
             </div>
